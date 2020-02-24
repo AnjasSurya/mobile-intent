@@ -12,17 +12,22 @@ public class ExplicitIntentActivity extends AppCompatActivity {
     private EditText usernameInput;
     private TextView outputText;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_explicit_intent);
-        usernameInput = findViewById(R.id.input_username);
+        //  Deklarasi attribut untuk findViewById
+        usernameInput = findViewById(R.id.input_name);
         outputText = findViewById(R.id.text_output);
     }
 
-    public void handleSubmit (View view){
+    //Onclick button dari main
+    public void handleSubmit(View view) {
+//        Input
         String name = usernameInput.getText().toString();
+//        Output
         outputText.setText(name);
-    }
 
+    }
 }

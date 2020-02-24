@@ -25,4 +25,14 @@ private EditText usernameInput;
     public void handleExit(View view) {
         finish();
     }
+
+    public void handleImplicitIntent(View view) {
+        Intent intent = new Intent(this, ImplicitIntentActivity.class);
+        startActivity(intent);
+    }
+
+    public void handleBundle(View view) {
+        Intent intent = new Intent(this, BundleActivity.class);
+        startActivity(intent);
+    }
 }
