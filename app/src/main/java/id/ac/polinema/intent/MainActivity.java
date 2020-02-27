@@ -8,7 +8,7 @@ import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-private EditText usernameInput;
+    private EditText usernameInput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,11 @@ private EditText usernameInput;
 
     public void handleBundle(View view) {
         Intent intent = new Intent(this, BundleActivity.class);
+        startActivity(intent);
+    }
+    
+    public void handleParcelable(View view) {
+        Intent intent = new Intent(this, ParcelableActivity.class);
         startActivity(intent);
     }
 }
