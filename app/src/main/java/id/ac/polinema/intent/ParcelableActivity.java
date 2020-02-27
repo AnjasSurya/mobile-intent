@@ -11,7 +11,7 @@ import id.ac.polinema.intent.model.User;
 
 public class ParcelableActivity extends AppCompatActivity {
 
-    public static final String USER_KEY = "user";
+    public static final String USER_KEY = "User";
     private TextView usernameInput;
     private TextView nameInput;
     private TextView ageInput;
@@ -20,6 +20,9 @@ public class ParcelableActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_parcelable);
+        usernameInput = findViewById(R.id.input_username);
+        nameInput = findViewById(R.id.input_name);
+        ageInput = findViewById(R.id.input_age);
     }
 
     public void handleSubmit(View view) {

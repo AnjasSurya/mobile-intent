@@ -29,6 +29,7 @@ public class ProfileParcelableActivity extends AppCompatActivity {
 
             // TODO: display value here
             User data = getIntent().getParcelableExtra(USER_KEY);
+
             usernameText.setText(data.getUsername());
             nameText.setText(data.getName());
             ageText.setText(String.valueOf(data.getAge()));
